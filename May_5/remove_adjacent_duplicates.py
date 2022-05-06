@@ -9,7 +9,7 @@ class Solution:
                 tmp.append([i,1])
             else:    
                 if tmp[-1][1] == k-1:
-                    tmp = tmp[:-1]
+                    tmp.pop()
                 else:
                     tmp[-1][1] += 1
         
